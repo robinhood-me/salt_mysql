@@ -3,4 +3,5 @@ include:
   - mysql.config
   - mysql.config_daemon
   - mysql.python
+  - mysql.service
   - mysql.root

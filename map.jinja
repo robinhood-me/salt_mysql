@@ -9,6 +9,8 @@
     'd_name': '/etc/mysql/mysql.conf.d/mysqld.cnf',
     'd_source': 'salt://mysql/files/mysqld.cnf',
     'python': 'python-mysqldb',
+    'root_name': 'root',
+    'root_password': 'r007',
 
     }, 
 
@@ -19,7 +21,8 @@
     'name': '/etc/my.cnf.d/server.cnf',
     'source': 'salt://mysql/files/server.cnf',
     'python': 'MySQL-python',
-
+    'root_name': 'root',
+    'root_password': 'r007',
     },
 
 })%}
