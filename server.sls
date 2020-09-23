@@ -10,8 +10,8 @@ mysql_debconf_settings:
   debconf.set:
     - name: mysql-server
     - data:
-        'mysql-server/root_password': {'type': 'password', 'value': '007'}
-        'mysql-server/root_password_again': {'type': 'password', 'value': '007'}
+        'mysql-server/root_password': {'type': 'password', 'value': 'r007'}
+        'mysql-server/root_password_again': {'type': 'password', 'value': 'r007'}
     - require:
       - pkg: debconf
     - require_in:
