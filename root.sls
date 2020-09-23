@@ -9,6 +9,7 @@ mysql_root_password_set:
 
 mysql_root_user:
   mysql_user.present:
-    - name: root
-    - password: r007
+    - name: {{ pillar['mysql']['root']['name'] }} 
+    - password: {{ pillar['mysql']['root']['password'] }}
     - host: localhost
+
