@@ -3,10 +3,13 @@
 include:
   - mysql.restart
 
-mysql_server_config:
+{% if grains['os_family'] == 'Debian' %}
+
+mysqld_server_config:
   file.managed:
-    - name: {{ robin.name }}
-    - source: {{ robin.source }}
+    - name: {{ robin.d_name }}
+    - source: {{ robin.d_source }}
     - require:
       - pkg: {{ robin.server }}
-  
+
+{% endif %}
