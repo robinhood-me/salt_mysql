@@ -10,8 +10,8 @@ mysql_debconf_settings:
   debconf.set:
     - name: mysql-server
     - data:
-        'mysql-server/root_password': {'type': 'password', 'value': '{{ pillar['mysql']['root']['password'] }}' }
-        'mysql-server/root_password_again': {'type': 'password', 'value': '{{ pillar['mysql']['root']['password'] }}' }
+        'mysql-server/root_password': {'type': 'password', 'value': 'r007007R'}
+        'mysql-server/root_password_again': {'type': 'password', 'value': 'r007007R'}
     - require:
       - pkg: debconf
     - require_in:
